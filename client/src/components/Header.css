@@ -1,0 +1,40 @@
+/* components/Header.css */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e4e7;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 배치 */
+}
+
+.header-logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px; /* 메뉴 링크 간격 */
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+/* 현재 활성화된 메뉴 강조 */
+.nav-link.active {
+  color: #4A90E2;
+  font-weight: bold;
+}
