@@ -1,0 +1,54 @@
+.mypage-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+.chart-placeholder {
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  color: #888;
+}
+
+.fav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fav-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.tag-badge {
+  color: #4A90E2;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}

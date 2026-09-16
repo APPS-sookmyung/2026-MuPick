@@ -1,0 +1,46 @@
+.musical-card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 100%; /* 그리드 셀 높이에 맞춤 */
+  overflow: hidden;
+}
+
+.musical-card:active {
+  transform: scale(0.98);
+}
+
+.poster-img {
+  width: 100%;
+  flex: 1; /* 카드 내부에서 남은 높이에 맞춰 자동 축소/확대 */
+  min-height: 0; /* flex 자식 요소의 넘침 방지 */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  flex-shrink: 0; /* 텍스트 영역은 줄어들지 않고 형태 유지 */
+}
+
+.musical-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.musical-meta {
+  font-size: 11px;
+  color: #777;
+}

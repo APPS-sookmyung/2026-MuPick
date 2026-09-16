@@ -1,0 +1,83 @@
+.home-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 22px;     /* 타이틀 폰트 크기 정리 */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+/* 🎯 최대 6열까지만 생성되도록 고정 가변 그리드 */
+.musical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+  gap: 12px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* PC 화면 (1200px 이상)에서 무조건 6열 고정 (최대 12개 배치) */
+@media (min-width: 1200px) {
+  .musical-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap : 16px;
+  }
+}
+
+.no-result {
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+  flex: 1;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #4A90E2;
+  color: #fff;
+  border-color: #4A90E2;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

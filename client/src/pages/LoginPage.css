@@ -1,0 +1,55 @@
+.login-container {
+  padding: 40px 20px;
+  text-align: center;
+
+  width: 100%;
+  height: 100vh;           /* 화면 전체 높이에 딱 맞춤 */
+  max-height: 100vh;       /* 높이가 넘치지 않도록 제한 */
+  overflow: hidden;        /* 넘치는 콘텐츠 및 스크롤바 숨김 */
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  width: 100%;
+  max-width: 400px; /* 버튼이 PC 화면에서 너무 늘어나지 않도록 너비 제한 */
+  padding: 12px;
+  background-color: #4A90E2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #357ABD;
+}
+
+.guest-btn {
+  margin-top: 12px; /* 구글 로그인 버튼과의 사이 간격 */
+  background-color: transparent;
+  color: var(--text, #666);
+  border: 1px solid var(--border, #e5e4e7);
+}
+
+.guest-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
